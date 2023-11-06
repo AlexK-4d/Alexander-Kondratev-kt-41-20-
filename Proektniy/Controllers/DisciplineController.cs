@@ -18,7 +18,7 @@ namespace Proektniy.Controllers
             }
 
 
-            [HttpPost(Name = "GetListOfDisciplinesByName")]
+            [HttpPost(Name = "GetListOfDisciplinesByPrepodAndNagruzka")]
             public async Task<IActionResult> GetAllDisciplinesAsync(DisciplineFilter filter, CancellationToken cancellationToken = default)
             {
                 var grades = await _disciplineService.GetDisciplinesAsync(filter, cancellationToken);

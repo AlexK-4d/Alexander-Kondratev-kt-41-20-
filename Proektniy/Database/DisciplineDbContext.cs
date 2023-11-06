@@ -9,11 +9,13 @@ namespace Proektniy.Database
     public class DisciplineDbContext : DbContext
     {
         public DbSet<Discipline> Disciplines { get; set; }
+        public DbSet<Prepod> Prepods { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
             modelBuilder.ApplyConfiguration(new DisciplineConfiguration());
+            modelBuilder.ApplyConfiguration(new PrepodConfiguration());
         }
 
         public DisciplineDbContext(DbContextOptions<DisciplineDbContext> options) : base(options)

@@ -28,17 +28,24 @@ namespace Proektniy.Database.Configurations
                 .HasColumnType(ColumnType.String).HasMaxLength(100)
                 .HasComment("Наименование дисциплины");
 
-            builder.Property(p => p.DisciplinePrepod)
-                .IsRequired()
-                .HasColumnName("c_discipline_prepod")
-                .HasColumnType(ColumnType.String).HasMaxLength(100)
-                .HasComment("Преподаватель дисциплины");
-
             builder.Property(p => p.DisciplineNagruzka)
                 .IsRequired()
                 .HasColumnName("c_discipline_nagruzka")
                 .HasColumnType(ColumnType.Int).HasMaxLength(100)
                 .HasComment("Нагрузка дисциплины");
+
+            builder.ToTable(TableName)
+                .HasOne(p => p.Prepod)
+                .WithMany(p => p.Disciplines)
+                .HasForeignKey(p => p.PrepodId)
+                .HasConstraintName("fk_f_prepod_id")
+                .OnDelete(DeleteBehavior.Cascade);
+
+            builder.ToTable(TableName)
+                .HasIndex(p => p.PrepodId, $"idx_{TableName}_fk_f_prepod_id");
+
+            builder.Navigation(p => p.Prepod)
+                .AutoInclude();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Proektniy.Models
+namespace AlexandrKondratevKt4120.Models
 {
     public class Prepod
     {

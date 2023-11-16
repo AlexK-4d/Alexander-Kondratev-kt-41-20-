@@ -24,7 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Proektniy\Proektniy.csproj" />
+    <ProjectReference Include="..\AlexandrKondratevKt4120\AlexandrKondratevKt4120.csproj" />
+    <ProjectReference Include="..\Proektniy\AlexandrKondratevKt4120.csproj" />
   </ItemGroup>
 
 </Project>

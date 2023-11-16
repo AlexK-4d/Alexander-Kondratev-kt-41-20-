@@ -1,4 +1,4 @@
-﻿namespace Proektniy.Filters.DisciplineFilter
+﻿namespace AlexandrKondratevKt4120.Filters.DisciplineFilter
 {
     public class DisciplineFilter
     {

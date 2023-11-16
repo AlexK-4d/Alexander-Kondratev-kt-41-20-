@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Proektniy.Database;
+using AlexandrKondratevKt4120.Database;
 
 #nullable disable
 
-namespace Proektniy.Migrations
+namespace AlexandrKondratevKt4120.Migrations
 {
     [DbContext(typeof(DisciplineDbContext))]
     partial class DisciplineDbContextModelSnapshot : ModelSnapshot

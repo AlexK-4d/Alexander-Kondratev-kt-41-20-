@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Proektniy.Database;
-using Proektniy.Filters.DisciplineFilter;
-using Proektniy.Models;
+using AlexandrKondratevKt4120.Database;
+using AlexandrKondratevKt4120.Filters.DisciplineFilter;
+using AlexandrKondratevKt4120.Models;
 
-namespace Proektniy.Interfaces.DisciplineInterfaces
+namespace AlexandrKondratevKt4120.Interfaces.DisciplineInterfaces
 {
         public interface IDisciplineService
         {

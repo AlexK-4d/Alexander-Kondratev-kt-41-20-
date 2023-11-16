@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Proektniy.Database.Configurations;
-using Proektniy.Models;
+using AlexandrKondratevKt4120.Database.Configurations;
+using AlexandrKondratevKt4120.Models;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace Proektniy.Database
+namespace AlexandrKondratevKt4120.Database
 {
     public class DisciplineDbContext : DbContext
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Proektniy.Database.Helper;
-using Proektniy.Models;
+using AlexandrKondratevKt4120.Database.Helper;
+using AlexandrKondratevKt4120.Models;
 
-namespace Proektniy.Database.Configurations
+namespace AlexandrKondratevKt4120.Database.Configurations
 {
     public class DisciplineConfiguration : IEntityTypeConfiguration<Discipline>
     {

@@ -1,4 +1,4 @@
-﻿namespace Proektniy.Database.Helper
+﻿namespace AlexandrKondratevKt4120.Database.Helper
 {
     public class ColumnType
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Proektniy;
-using Proektniy.Database;
-using Proektniy.Interfaces.DisciplineInterfaces;
-using Proektniy.Models;
+using AlexandrKondratevKt4120;
+using AlexandrKondratevKt4120.Database;
+using AlexandrKondratevKt4120.Interfaces.DisciplineInterfaces;
+using AlexandrKondratevKt4120.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -73,7 +73,7 @@ namespace alexandr_kondratev_kt_41_20.Tests
             await ctx.SaveChangesAsync();
 
             // Act
-            var filter = new Proektniy.Filters.DisciplineFilter.DisciplineFilter
+            var filter = new AlexandrKondratevKt4120.Filters.DisciplineFilter.DisciplineFilter
             {
                 DisciplinePrepod = "Романов Роман Романович",
                 DisciplineNagruzka = 24,

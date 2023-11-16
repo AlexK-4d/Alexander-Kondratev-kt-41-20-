@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Proektniy.Filters.DisciplineFilter;
-using Proektniy.Interfaces.DisciplineInterfaces;
+using AlexandrKondratevKt4120.Filters.DisciplineFilter;
+using AlexandrKondratevKt4120.Interfaces.DisciplineInterfaces;
 
-namespace Proektniy.Controllers
+namespace AlexandrKondratevKt4120.Controllers
 {
         [ApiController]
         [Route("[controller]")]

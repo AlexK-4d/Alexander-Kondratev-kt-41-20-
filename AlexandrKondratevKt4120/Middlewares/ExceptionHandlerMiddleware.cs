@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 
-namespace Proektniy.Middlewares
+namespace AlexandrKondratevKt4120.Middlewares
 {
     public class ExceptionHandlerMiddleware
     {

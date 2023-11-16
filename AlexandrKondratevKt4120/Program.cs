@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
-using Proektniy.Database;
-using Proektniy.ServiceExtensions;
+using AlexandrKondratevKt4120.Database;
+using AlexandrKondratevKt4120.ServiceExtensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

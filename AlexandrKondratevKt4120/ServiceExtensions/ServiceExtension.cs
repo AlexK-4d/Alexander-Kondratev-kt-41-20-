@@ -1,6 +1,6 @@
-﻿using Proektniy.Interfaces.DisciplineInterfaces;
+﻿using AlexandrKondratevKt4120.Interfaces.DisciplineInterfaces;
 
-namespace Proektniy.ServiceExtensions
+namespace AlexandrKondratevKt4120.ServiceExtensions
 {
     public static class ServiceExtension
     {

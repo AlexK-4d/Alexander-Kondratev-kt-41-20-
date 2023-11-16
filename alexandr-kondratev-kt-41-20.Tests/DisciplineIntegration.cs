@@ -45,7 +45,7 @@ namespace alexandr_kondratev_kt_41_20.Tests
                     DisciplineName = "Философия",
                     DisciplineNagruzka = 40,
                     PrepodId = 2
-                },
+                },  
                 new Discipline
                 {
                     DisciplineId = 3,
@@ -76,8 +76,7 @@ namespace alexandr_kondratev_kt_41_20.Tests
             // Act
             var filter = new AlexandrKondratevKt4120.Filters.DisciplineFilter.DisciplineFilter
             {
-                DisciplinePrepod = "Романов Роман Романович",
-                DisciplineNagruzka = 24,
+                DisciplinePrepod = "Романов Роман Романович"
             };
             var disciplineResult = await discService.GetDisciplinesAsync(filter, CancellationToken.None);
 

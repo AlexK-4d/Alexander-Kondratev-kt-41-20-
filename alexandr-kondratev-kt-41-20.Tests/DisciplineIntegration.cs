@@ -36,7 +36,8 @@ namespace alexandr_kondratev_kt_41_20.Tests
                 {
                     DisciplineId = 1,
                     DisciplineName = "Психология",
-                    PrepodId = 2
+                    DisciplineNagruzka = 35,
+                    PrepodId = 1
                 },
                 new Discipline
                 {

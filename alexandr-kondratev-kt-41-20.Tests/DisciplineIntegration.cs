@@ -76,7 +76,9 @@ namespace alexandr_kondratev_kt_41_20.Tests
             // Act
             var filter = new AlexandrKondratevKt4120.Filters.DisciplineFilter.DisciplineFilter
             {
-                DisciplinePrepod = "Романов Роман Романович"
+                DisciplinePrepod = "Романов Роман Романович",
+                DisciplineNagruzkaMore = 20,
+                DisciplineNagruzkaLess = 30
             };
             var disciplineResult = await discService.GetDisciplinesAsync(filter, CancellationToken.None);
 

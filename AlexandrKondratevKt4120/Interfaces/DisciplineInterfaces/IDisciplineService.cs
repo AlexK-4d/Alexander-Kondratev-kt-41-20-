@@ -14,9 +14,17 @@ namespace AlexandrKondratevKt4120.Interfaces.DisciplineInterfaces
         {
             public Task<Discipline[]> GetDisciplinesAsync(DisciplineFilter filter, CancellationToken cancellationToken = default)
             {
-            var grades = _dbContext.Set<Discipline>().Where( d=>
-                           d.Prepod.PrepodName == filter.DisciplinePrepod && 
-                           d.DisciplineNagruzka > 20 && d.DisciplineNagruzka < 30 ).ToArrayAsync(cancellationToken);
+            var grades = _dbContext.Set<Discipline>().Where(d =>
+                           d.Prepod.PrepodName == filter.DisciplinePrepod &&
+                           d.DisciplineNagruzka > filter.DisciplineNagruzkaMore && d.DisciplineNagruzka <
+                           filter.DisciplineNagruzkaLess).Select(
+               d => new Discipline
+               {
+                   DisciplineId = d.DisciplineId,
+                   DisciplineName = d.DisciplineName,
+                   DisciplineNagruzka = d.DisciplineNagruzka,
+                   PrepodId = d.PrepodId
+               }).ToArrayAsync(cancellationToken);
             return grades;
         }
 

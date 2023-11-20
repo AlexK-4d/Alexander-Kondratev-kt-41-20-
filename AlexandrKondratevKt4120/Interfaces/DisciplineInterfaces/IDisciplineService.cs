@@ -15,7 +15,7 @@ namespace AlexandrKondratevKt4120.Interfaces.DisciplineInterfaces
             public Task<Discipline[]> GetDisciplinesAsync(DisciplineFilter filter, CancellationToken cancellationToken = default)
             {
             var grades = _dbContext.Set<Discipline>().Where(d =>
-                           d.Prepod.PrepodName == filter.DisciplinePrepod &&
+                           d.PrepodId == filter.PrepodId &&
                            d.DisciplineNagruzka > filter.DisciplineNagruzkaMore && d.DisciplineNagruzka <
                            filter.DisciplineNagruzkaLess).Select(
                d => new Discipline
